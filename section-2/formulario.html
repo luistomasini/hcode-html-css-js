@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <form action="form.php">
+
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" name="nome" id="nome" class="form-control" required placeholder="Digite o seu nome">
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" name="email" id="email" class="form-control" required placeholder="seu@email.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="nascimento" class="form-label">Nascimento</label>
+        <input type="date" name="nascimento" id="nascimento" class="form-control" required min="2022-01-01" max="2022-10-20">
+    </div>
+
+    <div class="mb-3">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input class="form-input-check" type="radio" name="sexo" id="masculino" class="form-control">
+            <label class="form-input-label" for="masculino">Masculino</label>
+            <input class="form-input-check" type="radio" name="sexo" id="feminino" class="form-control">
+            <label class="form-input-label" for="feminino">Feminino</label>
+        </fieldset>
+    </div>
+
+    <div class="mb-3">
+            <label class="form-input-label" for="li">Li o contrato</label>
+            <input class="form-input-check" type="checkbox" name="li" id="li" requirerd checked>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-input-label" for="volume">Volume</label>
+        <input class="form-input-check" type="range" name="volume" id="volume" min="0" max="10" value="2.5" step="0.5">
+    </div>
+
+    <div class="mb-3">
+        <label for="meter">Bateria</label>
+        <meter min="0" max="100" low="15" value="12"></meter>
+    </div>
+
+    <div class="mb-3">
+        <label for="meter">Carregando</label>
+        <progress min="0" max="100" value="60">60%</progress>
+    </div>
+
+    <div class="mb-3">
+        <label for="ano" class="form-label">Ano Fabricação</label>
+        <input type="number" name="ano" id="ano" class="form-control" min="1920" max="2022" value="2022" step="20">
+    </div>
+
+    <div class="mb-3">
+        <label for="cor" class="form-label">Cor</label>
+        <input type="color" name="cor" id="cor" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="url" class="form-label">URL</label>
+        <input type="url" name="url" id="url" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="busca" class="form-label">Busca</label>
+        <input type="search" name="busca" id="busca" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="busca" class="form-label">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="estado">Estado</label>
+        <select name="estado" id="estado" class="form-control">
+            <option value="SP">São Paulo</option>
+            <option value="MG" selected>Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Cadstrar</button>
+    </div>
+
+   </form>
+    
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
