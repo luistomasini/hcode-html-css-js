@@ -382,19 +382,15 @@ footer .col-links a {
     text-decoration: none;
 }
 
+footer .col-links .fa {
+    margin: 0 6px;
+}
+
 footer .col-get-in-touch address {
     color: #666; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     display: flex;   
-}
-
-footer  .col-get-in-touch span .address{
-    padding-right: 40px;
-}
-
-footer span .phone{
-    margin-left: 5px;
 }
 
 footer .col-get-in-touch p {
@@ -410,9 +406,39 @@ footer .col-get-in-touch i {
     margin: 0 6px;
 }
 
+footer .col-get-in-touch .fa-phone {
+    font-size: 15px;
+    position: relative;
+    left: 5px;
+}
+
 footer .col-get-in-touch a {
     text-decoration: none;
     color: #666;
+    position: relative;
+    margin-left: -5px; 
+}
+
+footer .list-socials {
+	margin-top: 8px;
+    
+}
+footer .list-socials li {
+	display: inline-block;
+	margin-left: 15px;
+}
+footer .list-socials a {
+	display: block;
+	border: #9B9B9B 1px solid;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+	text-align: center;
+}
+footer .list-socials i {
+	font-size: 14px;
+	margin: auto;
 }
 
 
