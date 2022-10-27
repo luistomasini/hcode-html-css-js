@@ -113,6 +113,7 @@ header .header-black li a {
 header #logo {
     position: absolute;
     top: 20px;
+    z-index: 3;
 }
 
 #menu-container {
@@ -130,6 +131,12 @@ header #logo {
 
 #menu li.search {
     width: 182px;
+    transition-timing-function: cubic-bezier(1, -.91, .91, 1);
+    transition-duration: 1s;
+}
+
+#menu li.search.ativo {
+    width: 300px; 
 }
 
 #menu li.search input {
@@ -138,6 +145,10 @@ header #logo {
     border: none;
     height: 30px;
     line-height: 30px;
+}
+
+#menu li.search.ativo input {
+    width: 300px; 
 }
 
 #menu li.search input::-webkit-input-placeholder {
@@ -181,6 +192,7 @@ header #logo {
 }
 
 #banner h1 {
+    transition: 1s;
     color: #fff;
     position: absolute;
     top: 300px;
@@ -196,6 +208,11 @@ header #logo {
     color: white;
     font-weight: bold;
     margin-left: 10px;
+}
+
+#banner h1.efeito {
+    color: red;
+    font-size: 12em;
 }
 
 #news h2 {
