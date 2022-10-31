@@ -243,11 +243,19 @@ header #logo {
     margin-bottom: 0;
 }
 
-#news .thumbnails {
+#news .thumbnails time {
     font-size: 18px;
     margin-top: 10px;
     font-family: 'OpenSans', sans-serif;
     color: #A7A7A7;
+}
+
+#news .thmbnails .item-inner {
+    padding: 10px;
+}
+
+#news .thmbnails .item-inner img {
+    width: 100%;
 }
 
 #estatisticas {
@@ -456,6 +464,10 @@ footer .list-socials a {
 footer .list-socials i {
 	font-size: 14px;
 	margin: auto;
+}
+
+video > source {
+    width: 60%;
 }
 
 
