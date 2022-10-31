@@ -1,42 +1,44 @@
 $(document).ready(function(){
 
-    $("#logo").on("mouseover", function(){
-        
-        $("#banner h1").addClass("efeito");
+	$("#logotipo").on("mouseover",function(){
+		
+		$("#banner h1").addClass("efeito");
 
-    }).on("mouseout", function() {
+	}).on("mouseout", function(){
 
-        $("#banner h1").removeClass("efeito")
+		$("#banner h1").removeClass("efeito");
 
-    });
+	});
 
-    $("#input-search").on("focus", function(){
+	$("#input-search").on("focus", function(){
 
-        $("li.search").addClass("ativo");
+		$("li.search").addClass("ativo");
 
-    }).on("blur", function(){
+	}).on("blur", function(){
 
-        $("li.search").removeClass("ativo")
+		$("li.search").removeClass("ativo");				
 
-    });
+	});
 
-    $(".thumbnails").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        navText: ["Anterior", "Próximo"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            },
-           
-        }
-    });
+	$(".thumbnails").owlCarousel({
+ 
+      //autoPlay: 3000,
+      items : 4
+ 
+  	});
+
+	var owl = $(".thumbnails").data('owlCarousel');
+
+	$('#btn-news-prev').on("click", function(){
+
+		owl.prev();
+
+	});
+
+	$('#btn-news-next').on("click", function(){
+
+		owl.next();
+
+	});
 
 });
