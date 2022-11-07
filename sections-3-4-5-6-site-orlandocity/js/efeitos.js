@@ -27,18 +27,29 @@ $(document).ready(function(){
  
   	});
 
-	var owl = $(".thumbnails").data('owlCarousel');
+  	var owl = $(".thumbnails").data('owlCarousel');
 
-	$('#btn-news-prev').on("click", function(){
+  	$('#btn-news-prev').on("click", function(){
 
-		owl.prev();
+  		owl.prev();
 
-	});
+  	});
 
-	$('#btn-news-next').on("click", function(){
+  	$('#btn-news-next').on("click", function(){
 
-		owl.next();
+  		owl.next();
 
-	});
+  	});
+
+  	$("#page-up").on("click", function(event){
+		console.log(event)
+
+  		$("html, body").animate({
+  			scrollTop:0
+  		}, 1000);
+
+  		event.preventDefault();
+
+  	});
 
 });

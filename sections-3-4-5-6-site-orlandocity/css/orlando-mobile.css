@@ -1,4 +1,4 @@
-/* padrão para tablets*/
+/*Tamanho padrão para tablets*/
 @media only screen and (max-width: 768px) {
 	.header-black ul {
 		display: none;
@@ -6,6 +6,12 @@
 }
 /*Tamanho padrão para smartphones*/
 @media only screen and (max-width: 480px) {
+	header .header-black {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+	
 	.header-black ul, #menu{
 		display: none;
 	}
@@ -130,10 +136,11 @@
 		margin: 0;
 	}
 	footer .list-socials {
-		position: absolute;
-		width: 100%;
-		left: 0;
-		top: 50px;
+		display: flex;
+		position: relative;
+		top: 5.5rem;
+		left: -3rem;
+		justify-content: flex-end;
 	}
 	footer .col-md-10 {
 		padding: 0;
@@ -166,11 +173,7 @@
 	footer .hidden-sm-up {
 		margin-top: -10px;
 	}
-	header .header-black {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
+
 	footer .page-up {
 		display: inline-block!important;
 	}
